@@ -35,3 +35,12 @@ code {
 	justify-content: space-between;
 }
 
+.container{
+	/* max-width: 960px;  */
+	/* overall custom size of our page */
+	margin-right : auto;
+	margin-left:auto;
+	padding-right : 15px;
+	padding-left : 15px;
+}
+

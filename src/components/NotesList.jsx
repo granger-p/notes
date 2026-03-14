@@ -1,12 +1,16 @@
 import Notes from './Notes';
-const NotesList = () =>{
+const NotesList = ({notes}) =>{
     return (
         <div className='notes-list'>
-            <Notes />
-            <Notes />
-            <Notes />
-            <Notes />
-            <Notes />
+            {
+                notes.map((note)=>(
+                    <Notes 
+                    id={note.id} 
+                    text={note.text} 
+                    date={note.date} 
+                    />
+                ))
+            }
         </div>
     )
 };

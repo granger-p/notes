@@ -1,7 +1,7 @@
 import Notes from './Notes';
 const NotesList = () =>{
     return (
-        <div>
+        <div className='notes-list'>
             <Notes />
             <Notes />
             <Notes />

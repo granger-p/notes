@@ -2,7 +2,7 @@ import { MdDeleteForever } from 'react-icons/md';
 
 const Notes = () => {
   return (
-    <div className="note">
+    <div className="notes">
       <span>This the first Note!</span>
 
       <div className="note-footer">

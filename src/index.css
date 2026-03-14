@@ -44,3 +44,26 @@ code {
 	padding-left : 15px;
 }
 
+.note-new{
+	background-color: burlywood;
+	border-radius: 10px ;
+	padding: 20px;	 /* inside the box between the text and edges*/
+	min-height:200px;	 /*min height to keep*/
+	display: flex; 
+	flex-direction: column;  /* top to bottom*/
+	justify-content: space-between;
+	white-space: pre-wrap;
+}
+
+textarea{
+	border:none;
+	resize:none;
+	background-color: burlywood;
+}
+
+textarea:focus{outline: none;}
+
+.save{
+	border-radius: 10px;
+	background-color:blanchedalmond;
+}

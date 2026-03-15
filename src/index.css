@@ -45,7 +45,7 @@ code {
 }
 
 .note-new{
-	background-color: burlywood;
+	background-color:blanchedalmond;
 	border-radius: 10px ;
 	padding: 20px;	 /* inside the box between the text and edges*/
 	min-height:200px;	 /*min height to keep*/
@@ -58,7 +58,7 @@ code {
 textarea{
 	border:none;
 	resize:none;
-	background-color: burlywood;
+	background-color:blanchedalmond;
 }
 
 textarea:focus{outline: none;}
@@ -71,4 +71,31 @@ textarea:focus{outline: none;}
 
 .save:hover{
 	background-color:beige;
+	cursor : pointer;
+}
+
+.delete-icon{
+	cursor : pointer;
+}
+
+.search{
+	display : flex;
+	align-items: center;
+	background-color:beige;
+	border-radius: 10px;
+	padding: 10px 5px 10px 5px;
+	margin-bottom: 1.5em;
+	margin-top: 1.5em;
+	margin-left:1em;
+	margin-right:1em;
+	cursor : pointer;
+}
+
+.search input{
+	border:none;
+	background-color:beige;
+}
+
+.search input:focus{
+	outline: none;
 }

@@ -66,4 +66,9 @@ textarea:focus{outline: none;}
 .save{
 	border-radius: 10px;
 	background-color:blanchedalmond;
+	padding : 5px 10px 5px 10px;/* Top right bottom */
+}
+
+.save:hover{
+	background-color:beige;
 }

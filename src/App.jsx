@@ -19,9 +19,31 @@ const App= ()=>{
     }
 
     ]) 
+    const addNote = (text)=>{
+        const date = new Date();
+        const newNote = {
+            id : nanoid(),
+            text : text,
+            date : date.toLocaleDateString(),
+
+        }
+        const newNotes = [...notes,newNote];
+        setNotes(newNotes);
+    };
+
+    const deleteNote = (id)=>{
+        const newNotes = notes.filter((note)=> note.id !== id);
+        setNotes(newNotes);
+    }
     return(
         <div className='container'>
-            <NotesList notes = {notes} />
+            <NotesList 
+                notes = {notes}  
+                handleAddNote={addNote} 
+                handleDeleteNote = {deleteNote} 
+            /> 
+            {/* when final call will come the handleaddNote will come with a value which will be = to addNote so it will passed inside the addNote text  */}
+            {/* prop name = value which is passed in NotesList and propname can be anything , value is the value of the variable of parent which is here the same name notes   */}
         </div>
     );
 }

@@ -44,6 +44,10 @@ code {
 	padding-left : 15px;
 }
 
+.container{
+	min-height:100vh;
+}
+
 .note-new{
 	background-color:blanchedalmond;
 	border-radius: 10px ;
@@ -98,4 +102,33 @@ textarea:focus{outline: none;}
 
 .search input:focus{
 	outline: none;
+}
+
+.header{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+}
+
+.toggle-btn{
+	border:none;
+	background:none;
+	cursor:pointer;
+	font-size:1.4rem;
+	margin-left:auto;
+}
+
+.toggle-btn:hover{
+	transform:scale(1.2);
+}
+
+.dark-mode{
+	background-color:#1e1e1e;
+	color:white;
+
+}
+
+body.dark-mode{
+	background-color: black;
+	color: white;
 }
